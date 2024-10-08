@@ -1,0 +1,287 @@
+/* ========== common ========== */
+@font-face {
+    font-family: gilroy-regular;
+    src: url("../assets/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: gilroy-medium;
+    src: url("../assets/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url("../assets/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: gilroy-semi_bold;
+    src: url("../assets/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: gilroy-extra_bold;
+    src: url("../assets/Gilroy-ExtraBold.ttf");
+}
+
+:root {
+    --color--deep--blue: #003459;
+    --color--dark--blue: #002A48;
+    --color--deeper--blue: #00171F;
+    --color--deep--cream: #F7DBA7;
+    --color--cream: #FAE6C3;
+    --color--cream--light: #FCEED5;
+    --color--white: #ffffff;
+    --color--black: #000000;
+    --color--grey: #667479;
+    --color--light--grey: #99A2A5;
+    --color--lighter--grey: #cacaca;
+    --color--para--text: #242B33;
+    --color--orange: #FFB775;
+    --color--orange-light: #FEC792;
+    --color--cyan: #00A7E6;
+    --font--gilroy--regular: gilroy-regular, sans-serif;
+    --font--gilroy--medium: gilroy-medium, sans-serif;
+    --font--gilroy--bold: gilroy-bold, sans-serif;
+    --font--gilroy--semi--bold: gilroy-semi_bold, sans-serif;
+    --font--gilroy--extra--bold: gilroy-extra_bold, sans-serif;
+}
+.row {
+    align-items: start;
+}
+
+/* ========== navigator section ==========*/
+.navigator_section {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+ul.navigator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ul.navigator li a {
+    font-size: 16px;
+    font-family: var(--font--gilroy--medium);
+    color: var(--color--grey);
+}
+ul.navigator li i {
+    font-size: 12px;
+    color: var(--color--grey);
+}
+/* ========== banner section ==========*/
+
+
+/* ========== banner section ==========*/
+.banner_section {
+    margin-top: 20px;
+}
+.banner_wrapper {
+    background-color: var(--color--cream);
+}
+.bg_shape_five {
+    background-color: var(--color--deep--blue);
+}
+.banner_text h1 {
+    color: var(--color--white);
+}
+.banner_text h3 {
+    color: var(--color--white);
+}
+.banner_text p {
+    color: var(--color--white);
+}
+.btn-outline-medium {
+    border: 1px solid var(--color--white);
+    color: var(--color--white);
+}
+.btn-medium {
+    background-color: var(--color--white);
+    color: var(--color--deep--blue);
+}
+.btn-outline-medium:hover {
+    background-color: var(--color--white);
+    color: var(--color--deep--blue);
+}
+.banner_image {
+    overflow: visible;
+}
+.banner_image img {
+    width: 125%;
+    left: 50px;
+}
+
+/* ========== products section ==========*/
+.filter {
+    width: 22.5%;
+}
+.products {
+    width: 72.5%;
+}
+.products_title {
+    width: 100%;
+}
+.products .products_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products .products_title .products_title_wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.products .products_title .products_title_wrapper h2{
+    font-family: var(--font--gilroy--bold);
+    font-size: 24px;
+    color: var(--color--deep--blue);
+}
+.products .products_title .products_title_wrapper p{
+    font-family: var(--font--gilroy--medium);
+    font-size: 14px;
+    color: var(--color--para--text);
+}
+.products_sort_wrapper {
+    border: 1px solid var(--color--lighter--grey);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.products_sort_wrapper span, select {
+    color: var(--color--para--text);
+    font-size: 14px;
+    font-family: var(--font--gilroy--medium);
+}
+.products_sort_wrapper select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.product_card {
+    width: 31.5%;
+}
+/* ---------------------------- */
+.pagination {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination li {
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+}
+
+.pagination a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--color--deep--blue);
+    font-family: var(--font--gilroy--bold);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: var(--color--deep--blue);
+    color: white;
+}
+
+.pagination .active a {
+    background-color: var(--color--deep--blue);
+    color: white;
+    border: 1px solid var(--color--deep--blue);
+}
+
+.pagination .disabled a {
+    color: #ddd;
+    pointer-events: none;
+}
+
+/* ---------------------------- */
+.filter h2 {
+    font-family: var(--font--gilroy--bold);
+    color: var(--color--deep--blue);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.filter_check {
+    padding-bottom: 25px;
+}
+.filter_check h4 {
+    font-family: var(--font--gilroy--bold);
+    color: var(--color--black);
+    font-size: 18px;
+}
+.filter_check .check_box {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--color--lighter--grey);
+}
+/* ------------------------------ */
+/* checkbox & radio*/
+input[type="checkbox"],
+input[type="radio"] {
+    display: none; 
+}
+/* checkbox */
+label {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.check_box label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--color--lighter--grey);
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+    background-color: var(--color--white);
+    transition: background-color 0.3s ease;
+}
+.check_box input:checked + label::before {
+    background-color: var(--color--deep--blue);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20.285 4.285a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414l4.293 4.293 10.293-10.293a1 1 0 011.414 0z"/></svg>');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    border: 2px solid var(--color--deep--blue);
+}
+/* ------------------------------ */
+.filter_check .check_box label{
+    font-family: var(--font--gilroy--medium);
+    color: var(--color--para--text);
+    font-size: 16px;
+    line-height: 32px;
+    cursor: pointer;
+    margin: 0;
+}
+.filter_number {
+    padding-bottom: 25px;
+}
+.filter_number h4 {
+    font-family: var(--font--gilroy--bold);
+    color: var(--color--black);
+    font-size: 18px;
+}
+.filter_number .input_field_box {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--color--lighter--grey);
+    display: flex;
+    justify-content: space-between;
+}
+.input_field_box input {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: var(--font--gilroy--medium);
+    outline: none;
+}
