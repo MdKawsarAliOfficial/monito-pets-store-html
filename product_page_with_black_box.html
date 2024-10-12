@@ -1,0 +1,243 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Shiba Inu Sepia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .thumbnail {
+            border: 2px solid transparent;
+        }
+        .thumbnail.active {
+            border: 2px solid #3182ce; /* Tailwind's blue-600 */
+        }
+        .thumbnails {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #3182ce #e2e8f0; /* Tailwind's blue-600 and gray-200 */
+        }
+        .thumbnails::-webkit-scrollbar {
+            height: 8px;
+        }
+        .thumbnails::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Tailwind's gray-200 */
+        }
+        .thumbnails::-webkit-scrollbar-thumb {
+            background-color: #3182ce; /* Tailwind's blue-600 */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<div class="max-w-6xl mx-auto p-4">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia standing on grass" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/IyaEBf0F3S3gC6AgjfHfD9iaCYmfxpTDCw8eoNHMaxtcCxwcC.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 1" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/uHbl9NL68hofOyV39YLvfXq4aU08m4bKu3TMFoxw0w3NIGmTA.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 2" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/8I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 3" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/WclP9Al0waLACleDzVENC5T4lxy6mifJ4BQo2qjZM1JQIGmTA.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 4" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/iMer900zGZXvZSOn5qnaDwdC8SDNfTDibiJSiinQWaDRIGmTA.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 5" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/T3XmBDKJWGJkJtawWPfTuShzad5Pq7jaEWWJYe8wrGjUIGmTA.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 6" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/6I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 7" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/7I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 8" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/8I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 9" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/9I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 10" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/10I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 11" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/11I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                        <div class="slide">
+                            <img alt="Shiba Inu Sepia image 12" class="rounded-lg w-full" height="400" src="https://storage.googleapis.com/a1aa/image/12I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="600"/>
+                        </div>
+                    </div>
+                    <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md" onclick="prevSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md" onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="thumbnails mt-4 space-x-2">
+                    <img alt="Shiba Inu Sepia image 1" class="w-16 h-16 rounded-lg cursor-pointer thumbnail active" height="100" src="https://storage.googleapis.com/a1aa/image/uHbl9NL68hofOyV39YLvfXq4aU08m4bKu3TMFoxw0w3NIGmTA.jpg" width="100" onclick="showSlide(0)"/>
+                    <img alt="Shiba Inu Sepia image 2" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/8I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(1)"/>
+                    <img alt="Shiba Inu Sepia image 3" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/WclP9Al0waLACleDzVENC5T4lxy6mifJ4BQo2qjZM1JQIGmTA.jpg" width="100" onclick="showSlide(2)"/>
+                    <img alt="Shiba Inu Sepia image 4" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/iMer900zGZXvZSOn5qnaDwdC8SDNfTDibiJSiinQWaDRIGmTA.jpg" width="100" onclick="showSlide(3)"/>
+                    <img alt="Shiba Inu Sepia image 5" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/T3XmBDKJWGJkJtawWPfTuShzad5Pq7jaEWWJYe8wrGjUIGmTA.jpg" width="100" onclick="showSlide(4)"/>
+                    <img alt="Shiba Inu Sepia image 6" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/6I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(5)"/>
+                    <img alt="Shiba Inu Sepia image 7" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/7I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(6)"/>
+                    <img alt="Shiba Inu Sepia image 8" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/8I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(7)"/>
+                    <img alt="Shiba Inu Sepia image 9" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/9I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(8)"/>
+                    <img alt="Shiba Inu Sepia image 10" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/10I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(9)"/>
+                    <img alt="Shiba Inu Sepia image 11" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/11I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(10)"/>
+                    <img alt="Shiba Inu Sepia image 12" class="w-16 h-16 rounded-lg cursor-pointer thumbnail" height="100" src="https://storage.googleapis.com/a1aa/image/12I3qyf4KuSU6XqBWD8oWPfLwvMdqU6shB5Lec6eCp5h4gYYOB.jpg" width="100" onclick="showSlide(11)"/>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-6 mt-6 md:mt-0">
+                <nav class="text-gray-600 text-sm mb-4">
+                    <a class="hover:underline" href="#">Home</a> &gt;
+                    <a class="hover:underline" href="#">Dog</a> &gt;
+                    <a class="hover:underline" href="#">Large Dog</a> &gt;
+                    <a class="hover:underline" href="#">Shiba Inu Sepia</a>
+                </nav>
+                <h1 class="text-2xl font-bold mb-2">Shiba Inu Sepia</h1>
+                <p class="text-xl text-blue-600 font-semibold mb-4">34.000.000 VND</p>
+                <div class="grid grid-cols-2 gap-2 text-gray-700">
+                    <div>SKU</div>
+                    <div>: #1000078</div>
+                    <div>Gender</div>
+                    <div>: Female</div>
+                    <div>Age</div>
+                    <div>: 2 Months</div>
+                    <div>Size</div>
+                    <div>: Small</div>
+                    <div>Color</div>
+                    <div>: Apricot &amp; Tan</div>
+                    <div>Vaccinated</div>
+                    <div>: Yes</div>
+                    <div>Dewormed</div>
+                    <div>: Yes</div>
+                    <div>Cert</div>
+                    <div>: Yes (MKA)</div>
+                    <div>Microchip</div>
+                    <div>: Yes</div>
+                    <div>Location</div>
+                    <div>: Vietnam</div>
+                    <div>Published Date</div>
+                    <div>: 12-Oct-2022</div>
+                    <div>Additional Information</div>
+                    <div>: Pure breed Shih Tzu. Good body structure. With MKA cert and Microchip. Father from champion lineage.</div>
+                </div>
+                <div class="mt-4 flex space-x-4">
+                    <div class="flex items-center space-x-2 bg-yellow-100 p-2 rounded-lg">
+                        <i class="fas fa-heart text-red-500"></i>
+                        <span>100% health guarantee for pets</span>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-yellow-100 p-2 rounded-lg">
+                        <i class="fas fa-paw text-blue-500"></i>
+                        <span>100% guarantee of pet identification</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <span class="text-gray-600">Share:</span>
+                    <a class="text-gray-600 ml-2" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="text-gray-600 ml-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-gray-600 ml-2" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="text-gray-600 ml-2" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    function showSlide(index) {
+        currentSlide = index;
+        updateSlidePosition();
+        updateActiveThumbnail();
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlidePosition();
+        updateActiveThumbnail();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlidePosition();
+        updateActiveThumbnail();
+    }
+
+    function updateSlidePosition() {
+        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    function updateActiveThumbnail() {
+        thumbnails.forEach((thumbnail, index) => {
+            if (index === currentSlide) {
+                thumbnail.classList.add('active');
+            } else {
+                thumbnail.classList.remove('active');
+            }
+        });
+    }
+
+    // Initialize the first thumbnail as active
+    updateActiveThumbnail();
+
+    // Make the thumbnails draggable
+    const thumbnailsContainer = document.querySelector('.thumbnails');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    thumbnailsContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        thumbnailsContainer.classList.add('active');
+        startX = e.pageX - thumbnailsContainer.offsetLeft;
+        scrollLeft = thumbnailsContainer.scrollLeft;
+    });
+
+    thumbnailsContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        thumbnailsContainer.classList.remove('active');
+    });
+
+    thumbnailsContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        thumbnailsContainer.classList.remove('active');
+    });
+
+    thumbnailsContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - thumbnailsContainer.offsetLeft;
+        const walk = (x - startX) * 2; //scroll-fast
+        thumbnailsContainer.scrollLeft = scrollLeft - walk;
+    });
+</script>
+</body>
+</html>
