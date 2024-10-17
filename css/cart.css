@@ -1,0 +1,105 @@
+/* ========== common ========== */
+@font-face {
+    font-family: gilroy-regular;
+    src: url("../assets/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: gilroy-medium;
+    src: url("../assets/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url("../assets/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: gilroy-semi_bold;
+    src: url("../assets/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: gilroy-extra_bold;
+    src: url("../assets/Gilroy-ExtraBold.ttf");
+}
+
+:root {
+    --color--deep--blue: #003459;
+    --color--dark--blue: #002A48;
+    --color--deeper--blue: #00171F;
+    --color--deep--cream: #F7DBA7;
+    --color--cream: #FAE6C3;
+    --color--cream--light: #FCEED5;
+    --color--white: #ffffff;
+    --color--black: #000000;
+    --color--grey: #667479;
+    --color--light--grey: #99A2A5;
+    --color--lighter--grey: #cacaca;
+    --color--para--text: #242B33;
+    --color--orange: #FFB775;
+    --color--orange-light: #FEC792;
+    --color--cyan: #00A7E6;
+    --font--gilroy--regular: gilroy-regular, sans-serif;
+    --font--gilroy--medium: gilroy-medium, sans-serif;
+    --font--gilroy--bold: gilroy-bold, sans-serif;
+    --font--gilroy--semi--bold: gilroy-semi_bold, sans-serif;
+    --font--gilroy--extra--bold: gilroy-extra_bold, sans-serif;
+}
+/* -------------------------------------------- */
+
+.header {
+    background-color: transparent;
+    border-radius: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+}
+.main_menu {
+    display: flex;
+    gap: 50px;
+    z-index: 555;
+}
+.main_icon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin-left: auto;
+}
+.main_icon li {
+    display: flex;
+    align-items: center;
+}
+.main_icon li a {
+    font-size: 16px;
+    position: relative;
+}
+.main_icon li a i {
+    font-size: 16px;
+    color: var(--color--deep--blue);
+    transition: .3s;
+}
+.main_icon li a i:hover {
+    color: var(--color--cyan);
+}
+.main_icon li a span {
+    font-size: 12px;
+    font-family: var(--font--gilroy--medium);
+    background-color: var(--color--deep--blue);
+    color: var(--color--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 2px;
+}
+
+/* --------------------------------- */
